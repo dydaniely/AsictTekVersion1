@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="AcistTekSkillTest:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="JavaSkillTestAll.war">
+      <element id="artifact" artifact-name="AcistTekSkillTest:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" build-on-make="true" name="acisTekskilltest">
+    <output-path>$PROJECT_DIR$/out/artifacts/acisTekskilltest</output-path>
+    <root id="root">
+      <element id="module-output" name="AcistTekSkillTest" />
+    </root>
+  </artifact>
+</component>
