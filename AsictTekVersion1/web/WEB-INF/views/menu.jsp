@@ -15,13 +15,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     <title>Acist information technology </title>
 <link rel="stylesheet" href="/resources/js/jquery-ui-1.12.1/jquery-ui-1.12.1/jquery-ui.css"/>
-
-
-
     <script src="/resources/js/jquery-ui-1.12.1/jquery-ui-1.12.1/jquery-ui.js"/>
     <script src="/resources/js/jquery-ui-1.12.1/jquery-ui-1.12.1/jquery-ui.min.js"/>
-
-
     <link href="<c:url value="/resources/css/w3.css" />" rel="Stylesheet" type="text/css" />
     <link href="<c:url value="/resources/css/css.css"/>" rel="Stylesheet" type="text/css"/>
     <script>
