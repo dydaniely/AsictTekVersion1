@@ -18,6 +18,7 @@ public class DefaultController {
     public String HomePage(ModelMap model) {
       logger.debug("HomePage Method executed");
         model.addAttribute("Message","AscitTekJavaSkillTest");
+
         return "MainPage";
                 }
 
