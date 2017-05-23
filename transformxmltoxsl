@@ -1,0 +1,76 @@
+/* 
+ * @Program that Transforms an XML File with XSL
+ * XMLtoXSL.java 
+ * Author:-RoseIndia Team
+ * Date:-23-July-2008
+ */
+
+import java.io.*;
+import javax.xml.transform.*;
+import javax.xml.transform.stream.*;
+
+public class XMLtoXSL {
+
+    public static void main(String[] args) throws Exception {
+		//Check the file exist or nt 
+
+		if (!IsHtmFileExist(fileName)
+		{
+			xsl(response01.xml,respons.html,MatchinfDetail.xsl)
+				return filename; to the controllwer
+		} 
+		//CreateOutPut HTML File at /views/claimnumber.html;
+
+
+        new XMLtoXSL().xsl("t.xml", "gt.xml", "newstylesheet1.xsl");
+    }
+
+    public void xsl(String inputFilename, String outputFilename, String xslFilename)
+            throws Exception {
+        TransformerFactory factory = TransformerFactory.newInstance();
+        Templates template = factory.newTemplates(new StreamSource(
+                new FileInputStream(xslFilename)));
+        Transformer xformer = template.newTransformer();
+        Source source = new StreamSource(new FileInputStream(inputFilename));
+        Result result = new StreamResult(new FileOutputStream(outputFilename));
+        xformer.transform(source, result);
+    }
+}
+
+
+/*Controller Display the html file */
+/*The html file must be kept in views
+
+rendering html sting using jsp 
+
+<%@ taglib uri="http://java.sun.com/jstl/core" prefix="c" %>
+<html>
+<head>
+<title>The attribute escapeXml in c:out</title>
+</head>
+
+<body>
+<c:set var="test" scope="session">
+<table border="5">
+We are going to use the attribute escapeXml of c:out to show the difference
+<tr>
+<td bgcolor="green">roseindia.net</td>
+
+<td bgcolor="red">roseindia.net</td>
+</tr>
+
+<tr>
+<td bgcolor="gray">roseindia.net</td>
+
+<td bgcolor="yellow">roseindia.net</td>
+</tr>
+</table>
+</c:set>
+
+<h1>out with escapeXml=false</h1>
+<c:out value="${test}" escapeXml="true" /><br>
+<h3>out with escapeXml=false</h3>
+<c:out value="${test}" escapeXml="false" />
+<br />
+</body>
+</html>
